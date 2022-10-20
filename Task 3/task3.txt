@@ -1,0 +1,18 @@
+Step 1:
+    The initial state is the combination of qo and q3
+    We call this q'0
+From q'0:
+    We then expand to two new states. Moving from initial state,
+    if there is a 0 we move to a combination of q1, call this state q'1
+    If it's a 1, then we get a combination of state q0, 
+    call this state q'2
+From q'1:
+    From this state, if the next input is a 1, then we loop back
+    to q'1. If the next input is a 0, then we move to a combination
+    of q2, into a new state q'3
+From q'2:
+    From this state, if the next input is a 0, we transition to q'1
+    If the next input is a 1, we loop back to q'2
+From q'3:
+    An input of 1 or 0 will loop back to q'3. This state is
+    the only final state
